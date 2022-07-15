@@ -1,0 +1,195 @@
+* {
+	padding:0;
+	border:0;
+	font-family: 'Quicksand', sans-serif;
+	color:#333;
+}
+header {
+	height:70px;
+}
+header h1 {
+	display: inline-block;
+	float: left;
+	padding:3px 18px;
+}
+header h1 a {
+	transition: .3s;
+}
+header h1 a:hover {
+	color:#e51515;
+}
+header ul{
+	float: right;
+}
+header ul li {
+	padding:15px;
+	display: inline-block;
+}
+header ul li a {
+	transition: .3s;
+}
+header ul li a:hover {
+	color:#e51515;
+}
+a {
+	text-decoration:none;
+}
+.container {
+	width:80%;
+	margin:0 auto;
+}
+.container: after {
+	content:'';
+	display: block;
+	clear: both;
+}
+.mobile-menu {
+	float:right;
+	padding:10px 15px;
+	display:none;
+}
+.mobile-menu:hover {
+	cursor: pointer;
+}
+#check {
+	display:none;
+}
+.sidebar {
+	position: fixed;
+	top:0;
+	bottom:0;
+	left:-300px;
+	width:300px;
+	background-color: rgba(23,49,166, .9);
+	transition: .3s;
+}
+.sidebar ul li a {
+	color:#fff;
+}
+.sidebar ul li {
+	padding:24px;
+	transition: .3s;
+	transition-property: background-color;
+}
+.sidebar ul li:hover {
+	background-color:#ee1d2f;
+}
+#check: checked ~ .sidebar {
+	left:0px solid;
+}
+.benner {
+	background-color:#19247d;
+	padding:100px 0;
+}
+section {
+	padding:50px 0;
+}
+.benner img {
+	width:100px;
+	border-radius:10px;
+	box-shadow: 0 3px 5px #ddd;
+	margin-bottom:10px;
+}
+.benner h2,
+.benner p,
+.banner span {
+	color:#fff;
+}
+.banner h2 {
+	margin-bottom:10px;
+}
+.banner p {
+	font-size:18px;
+}
+.banner-left {
+	padding-left:24px;
+}
+section h3 {
+	padding-bottom:20px;
+	text-align: center;
+	margin:20px;
+	position: relative;
+}
+section h3:before {
+	content:'';
+	display: block;
+	position: absolute;
+	bottom:0;
+	width:120px;
+	height:1px;
+	background-color: #ddd;
+	left: calc(44%);
+}
+section h3:after {
+	content:'';
+	display: block;
+	position: absolute;
+	bottom:0;
+	width:60px;
+	height:4px;
+	background-color: #eb2800;
+	left: calc(47%);
+}
+#about p {
+	text-align: justify;
+	text-indent: 20px;
+	line-height: 25px;
+	margin-bottom: 15px;
+}
+#skills {
+	background-color: #f9f9f9;
+}
+#skills .bar {
+	height: 30px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	margin: 5px 0 20px 0;
+	
+}
+.bar .nilai {
+	height:30px;
+	background-color: #ff243f;
+	display: inline-block;
+	color: #fff;
+	text-align: center;
+}
+.html {
+	width: 100%;
+}
+.css {
+	width: 90%;
+}
+.js {
+	width: 85%;
+}
+.php {
+	width: 95%;
+}
+.col-3{
+	width: 33.33%;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	padding: 5px 5px;
+}
+.col-3 h4 {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 15px;
+}
+footer {
+	padding: 10px;
+	text-align: center;
+}
+footer small {
+	color: #fff;
+}
+@media (max-width: 768px){
+	.mobile-menu {
+		display:block;
+	}
+	header ul {
+		display:none;
+
+	}
+}
